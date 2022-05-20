@@ -1,3 +1,16 @@
+
+# IDE
+*.idea
+*.vscode
+*.user
+*.vs
+.vs/
+.cache/
+
+# CMake
+compile_commands.json
+CMakeSettings.json
+
 # Prerequisites
 *.d
 
@@ -6,6 +19,9 @@
 *.lo
 *.o
 *.obj
+out/
+build*/
+cmake-*/
 
 # Precompiled Headers
 *.gch
@@ -30,3 +46,24 @@
 *.exe
 *.out
 *.app
+
+# CUDA
+*.i
+*.ii
+*.gpu
+*.ptx
+*.cubin
+*.fatbin
+
+# logs
+log/
+
+# Misc
+????????-????-????-????-????????????
+
+# Build
+.out
+.build
+*-build-*
+
+.clion.source.upload.marker
