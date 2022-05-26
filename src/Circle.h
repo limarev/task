@@ -6,16 +6,18 @@
 #define TASK_CIRCLE_H
 
 #include "Figure.h"
-#include "DrawHandler.h"
 
 class Circle: public Figure {
 public:
     explicit Circle(const Point& center, double radius) : center_(center), radius_(radius) {};
     ~Circle() override {};
-    double area() override {return 0;}
+
+    std::string type() const noexcept override {
+        return type_;
+    }
 private:
     Point center_;
     double radius_;
-    DrawHandler drawHandler;
+    const std::string type_ {"circle"};
 };
 #endif //TASK_CIRCLE_H

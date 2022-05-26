@@ -5,7 +5,7 @@
 #ifndef TASK_FIGURE_H
 #define TASK_FIGURE_H
 
-#include "DrawHandler.h"
+#include <string>
 
 class Figure {
 public:
@@ -14,13 +14,8 @@ public:
         double y;
     };
     virtual ~Figure() = 0;
-    virtual double area() = 0;
-    void draw() {
-        drawHandler.draw();
-    }
-private:
-    DrawHandler drawHandler;
+    virtual std::string type() const noexcept = 0;
 };
 
-inline Figure::~Figure() {};
+Figure::~Figure() = default;
 #endif //TASK_FIGURE_H

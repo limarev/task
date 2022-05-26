@@ -3,7 +3,12 @@
 //
 
 #include "Circle.h"
+#include "DrawHandler.h"
 
 int main() {
-    Circle c({1, 1}, 1);
+    Figure* f = new Circle({1, 1}, 1);
+    DrawHandler handler;
+    handler.draw(f);
+    handler.draw(nullptr);
+
 }
