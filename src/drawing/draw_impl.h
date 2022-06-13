@@ -5,8 +5,8 @@
 #ifndef TASK_DRAW_IMPL_H
 #define TASK_DRAW_IMPL_H
 
-#include "primitives/Circle.h"
-#include "primitives/Rectangle.h"
+#include "../primitives/Circle.h"
+#include "../primitives/Rectangle.h"
 #include "Screen.h"
 
 #include <iostream>

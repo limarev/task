@@ -40,7 +40,7 @@ public:
     Drawable(Drawable& other) : ptr(other.ptr->clone()) {}
     Drawable(Drawable&& other) noexcept = default;
     Drawable& operator=(const Drawable& other) {
-        ptr = std::move(other.ptr->clone());
+        ptr = other.ptr->clone();
         return *this;
     }
     Drawable& operator=(Drawable&& other) noexcept {

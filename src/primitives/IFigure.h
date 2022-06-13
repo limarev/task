@@ -18,4 +18,6 @@ public:
     virtual void rotate(const Vector3D& v) = 0;
     virtual void scale(double x) = 0;
 };
+
+
 #endif //TASK_IFIGURE_H
